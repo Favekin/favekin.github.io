@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up / Login - Chukwunonso and Sons</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpg" href="./icon.jpeg">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+<body class="text-gray-800">
+
+  <header class="bg-[#2b8a3e] text-white">
+    <div class="container mx-auto flex flex-col items-center text-center gap-5 py-6 px-4">
+      <h1 class="text-2xl sm:text-3xl font-bold uppercase">
+        Chukwunonso  
+        <span class="font-normal text-lg sm:text-xl text-yellow-400">and Sons</span>
+      </h1>
+      <h2 class="text-xs sm:text-sm">Birthing Dreams using technological tools</h2>
+      <nav class="flex flex-wrap justify-center gap-2 sm:gap-6 md:gap-10 pt-3 text-xs sm:text-sm md:text-base">
+        <a href="./index.html" class="px-3 py-1 rounded-md hover:bg-white hover:text-[#2b8a3e]  transition">Home</a>
+        <a href="#" class="px-3 py-1 rounded-md hover:bg-white hover:text-[#2b8a3e]  transition">About</a>
+        <a href="./Award.html" class="px-3 py-1 rounded-md hover:bg-white hover:text-[#2b8a3e]  transition">Awards</a>
+        <a href="./Services.html" class="px-3 py-1 rounded-md hover:bg-white hover:text-[#2b8a3e]  transition">Services</a>
+        <a href="./login.html" class="px-3 py-1 rounded-md hover:bg-white hover:text-[#2b8a3e]  transition">Sign up / Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto mt-12 px-4 mb-16">
+    <div class="max-w-xl mx-auto bg-white shadow-md rounded-lg p-6 border border-gray-200 mb-12">
+      <h2 class="text-2xl font-bold text-[#2b8a3e] mb-6 text-center">Login</h2>
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium">Email</label>
+          <input type="email" name="login-email" placeholder="Enter your email"
+                 class="w-full p-3 mt-1 border border-gray-300 rounded-md" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Password</label>
+          <input type="password" name="login-password" placeholder="Enter your password"
+                 class="w-full p-3 mt-1 border border-gray-300 rounded-md" required />
+        </div>
+        <button type="submit"
+                class="w-full bg-[#2b8a3e] text-white py-2 rounded-md hover:bg-yellow-400 transition">
+          Login
+        </button>
+      </form>
+    </div>
+
+    <div class="max-w-xl mx-auto bg-white shadow-md rounded-lg p-6 border border-gray-200">
+      <h2 class="text-2xl font-bold text-[#2b8a3e] mb-6 text-center">Sign Up</h2>
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium">Full Name</label>
+          <input type="text" name="signup-name" placeholder="Enter your full name"
+                 class="w-full p-3 mt-1 border border-gray-300 rounded-md" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Email</label>
+          <input type="email" name="signup-email" placeholder="Enter your email"
+                 class="w-full p-3 mt-1 border border-gray-300 rounded-md" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Password</label>
+          <input type="password" name="signup-password" placeholder="Create a password"
+                 class="w-full p-3 mt-1 border border-gray-300 rounded-md" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Date of Birth</label>
+          <input type="date" name="dob"
+                 class="w-full p-3 mt-1 border border-gray-300 rounded-md" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Gender</label>
+          <div class="flex gap-6">
+            <label class="inline-flex items-center">
+              <input type="radio" name="gender" value="male" class="text-[#2b8a3e]" required>
+              <span class="ml-2">Male</span>
+            </label>
+            <label class="inline-flex items-center">
+              <input type="radio" name="gender" value="female" class="text-[#2b8a3e]">
+              <span class="ml-2">Female</span>
+            </label>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Tell Us About Yourself</label>
+          <textarea name="about" rows="4" placeholder="Write a few sentences..."
+                    class="w-full p-3 mt-1 border border-gray-300 rounded-md resize-none"></textarea>
+        </div>
+        <button type="submit"
+                class="w-full bg-yellow-400 text-[#2b8a3e] py-2 rounded-md hover:bg-[#2b8a3e] hover:text-white transition">
+          Sign Up
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-[#2b8a3e] text-white">
+    <div class="container mx-auto flex flex-col items-center py-6 px-4 text-center text-sm">
+      <div class="flex gap-4 sm:gap-6 mb-3 text-lg">
+        <div class="icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+        <div class="icons"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+        <div class="icons"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="icons"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></div>
+      </div>
+      <p>© 2025 Chukwunonso and Sons. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
